@@ -1,6 +1,18 @@
 import { useState } from 'react';
 
 function App() {
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+
+  const closeMenu = () => {
+    setMenuIsOpen(false);
+    document.body.style.overflow = 'auto';
+  };
+
+  const openMenu = () => {
+    setMenuIsOpen(true);
+    document.body.style.overflow = 'hidden';
+  };
+
   return (
     <>
       <header className="position-fixed w-100 shadow-b bg-white">
@@ -20,7 +32,7 @@ function App() {
                 <a href="#contacts">Contacts</a>
               </li>
             </ul>
-            <div className="burger d-block d-sm-none">
+            <div onClick={openMenu} className="burger d-block d-sm-none">
               <span className="tt"></span>
               <span className="mm"></span>
               <span className="bb"></span>
@@ -68,21 +80,27 @@ function App() {
             </ul>
           </div>
         </section>
-        <div className="burger-menu">
+        <div className={`burger-menu ${menuIsOpen ? 'burger-menu_open' : ''}`}>
           <div className="container">
-            <div className="burger-menu__close">
+            <div onClick={closeMenu} className="burger-menu__close">
               <span></span>
               <span></span>
             </div>
             <ul>
               <li>
-                <a href="#about">About</a>
+                <a onClick={closeMenu} href="#about">
+                  About
+                </a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a onClick={closeMenu} href="#projects">
+                  Projects
+                </a>
               </li>
               <li>
-                <a href="#contacts">Contacts</a>
+                <a onClick={closeMenu} href="#contacts">
+                  Contacts
+                </a>
               </li>
             </ul>
           </div>

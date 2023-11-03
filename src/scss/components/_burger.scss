@@ -23,17 +23,16 @@
 
 .burger-menu {
   position: fixed;
-  display: none;
   width: 100%;
   top: 0;
   left: 0;
   background-color: $bg-grey;
-  @include v-xs {
-    display: block;
-  }
+  transform: translateX(-100%);
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   &__close {
     position: absolute;
-    top: 24px;
+    top: 30px;
     right: 24px;
     width: 20px;
     height: 20px;
@@ -48,11 +47,11 @@
     }
     :nth-child(1) {
       transform: rotate(45deg);
-      top: 6px;
+      top: 10px;
     }
     :nth-child(2) {
-      top: 6px;
       transform: rotate(-45deg);
+      top: 10px;
     }
   }
   ul {
@@ -70,5 +69,11 @@
   li {
     margin-bottom: 38px;
     text-align: center;
+  }
+  &_open {
+    transform: translateX(-100%);
+    @include v-xs {
+      transform: translateX(0);
+    }
   }
 }
