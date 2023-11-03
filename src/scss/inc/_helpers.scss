@@ -1,3 +1,17 @@
 .shadow-b {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+.container {
+  padding: 0 72px;
+  @include v-md {
+    padding: 0 42px;
+  }
+  @include v-sm {
+    padding: 0 24px;
+  }
+}
+
+.row {
+  margin: 0;
+}

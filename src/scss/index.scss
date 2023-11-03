@@ -2,7 +2,11 @@
 @import 'reset-css';
 @import 'bootstrap';
 @import './inc/variables';
+@import './inc/responsive';
 @import './inc/fonts';
 @import './inc/base';
 @import './inc/colors';
 @import './inc/helpers';
+
+//components
+@import './components/burger';

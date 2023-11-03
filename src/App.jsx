@@ -7,9 +7,9 @@ function App() {
         <div className="container">
           <nav className="d-flex justify-content-between py-5 align-items-center">
             <a href="#about">
-              <h2>Vladislav_dev</h2>
+              <h2 className="m-0">Vladislav_dev</h2>
             </a>
-            <ul className="d-flex justify-content-between gap-5 m-0">
+            <ul className="d-none d-sm-flex justify-content-between gap-5 m-0">
               <li>
                 <a href="#about">About</a>
               </li>
@@ -20,6 +20,11 @@ function App() {
                 <a href="#contacts">Contacts</a>
               </li>
             </ul>
+            <div className="burger d-block d-sm-none">
+              <span className="tt"></span>
+              <span className="mm"></span>
+              <span className="bb"></span>
+            </div>
           </nav>
         </div>
       </header>
@@ -63,6 +68,25 @@ function App() {
             </ul>
           </div>
         </section>
+        <div className="burger-menu">
+          <div className="container">
+            <div className="burger-menu__close">
+              <span></span>
+              <span></span>
+            </div>
+            <ul>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </main>
     </>
   );
