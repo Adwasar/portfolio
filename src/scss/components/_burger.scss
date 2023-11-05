@@ -28,7 +28,7 @@
   left: 0;
   background-color: $bg-grey;
   transform: translateX(-100%);
-  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   &__close {
     position: absolute;

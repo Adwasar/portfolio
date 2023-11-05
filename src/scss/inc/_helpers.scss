@@ -3,6 +3,7 @@
 }
 
 .container {
+  max-width: 1296px;
   padding: 0 72px;
   @include v-md {
     padding: 0 42px;

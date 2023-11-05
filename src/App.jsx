@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import HayBossImg from './assets/img/HeyBoss.png';
+
 function App() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
@@ -15,7 +17,7 @@ function App() {
 
   return (
     <>
-      <header className="position-fixed w-100 shadow-b bg-white">
+      <header className="custom-header position-fixed zindex-fixed w-100 shadow-b bg-white">
         <div className="container">
           <nav className="d-flex justify-content-between py-5 align-items-center">
             <a href="#about">
@@ -61,12 +63,20 @@ function App() {
         <section id="projects" className="vh-100 d-flex align-items-center">
           <div className="container mt-5">
             <h2>Projects</h2>
-            <ul>
-              <li>Project1</li>
-              <li>Project2</li>
-              <li>Project3</li>
-              <li>Project4</li>
-            </ul>
+            <div className="projects text-center ">
+              <div className="row bg-grey project shadow-lg px-5 py-5 mt-5 align-items-center">
+                <div className="project__img p-0 col-12 col-md-5">
+                  <a href="https://marketplace-landing-29h.pages.dev/">
+                    <img src={HayBossImg}></img>
+                  </a>
+                </div>
+                <div className="col-12 col-md-7 px-0 px-md-5 pt-5 pt-md-0">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                  eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                  montes, nascetur ridiculus mus. Donec quam felis,
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <section id="contacts" className="vh-100 d-flex align-items-center bg-grey">

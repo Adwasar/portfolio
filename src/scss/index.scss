@@ -8,5 +8,9 @@
 @import './inc/colors';
 @import './inc/helpers';
 
+//layout
+@import './layout/header';
+
 //components
 @import './components/burger';
+@import './components/project';
