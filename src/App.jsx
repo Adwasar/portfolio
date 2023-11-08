@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <header className="custom-header position-fixed zindex-fixed w-100 shadow-b bg-white">
+      <header className="position-fixed z-1 w-100 shadow-b bg-white">
         <div className="container">
           <nav className="d-flex justify-content-between py-5 align-items-center">
             <a href="#about">
@@ -114,7 +114,7 @@ function App() {
             </ul>
           </div>
         </section>
-        <div className={`burger-menu ${menuIsOpen ? 'burger-menu_open' : ''}`}>
+        <div className={`burger-menu z-2 ${menuIsOpen ? 'burger-menu_open' : ''}`}>
           <div className="container">
             <div onClick={closeMenu} className="burger-menu__close">
               <span></span>
