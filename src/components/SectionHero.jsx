@@ -8,7 +8,7 @@ function SectionHero() {
               <div className="hero-img"></div>
             </div>
             <div className="col-12 col-md-7 mt-5 mt-md-0">
-              <h1>Front-End React Developer</h1>
+              <h1 className="display-2">Front-End React Developer</h1>
               <p>
                 Hi, I'm Vladislav Bryl. A passionate Front-end React Developer based in Kharkiv,
                 Ukrain.

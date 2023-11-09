@@ -48,7 +48,7 @@ function App() {
         <SectionProjects />
         <section id="contacts" className="vh-100 d-flex align-items-center bg-grey">
           <div className="container mt-5">
-            <h2>Contacts</h2>
+            <h2 className="display-2">Contacts</h2>
             <ul>
               <li>Contact1</li>
               <li>Contact2</li>
