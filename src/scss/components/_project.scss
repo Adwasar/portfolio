@@ -1,6 +1,6 @@
-$img-size: 400px;
-$img-size-md: 290px;
-$img-size-sm: 230px;
+$img-size: 310px;
+$img-size-md: 210px;
+$img-size-sm: 190px;
 
 .project {
   border-radius: 40px;
@@ -32,8 +32,13 @@ $img-size-sm: 230px;
       }
     }
   }
+
   img {
     transition: transform 15s linear;
     width: 100%;
+  }
+
+  a {
+    text-decoration: underline;
   }
 }
