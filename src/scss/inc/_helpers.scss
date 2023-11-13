@@ -20,3 +20,13 @@
 .fw-semi {
   font-weight: 600;
 }
+
+.fw {
+  &-semi {
+    font-weight: 600;
+  }
+
+  &-reg {
+    font-weight: 400;
+  }
+}

@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import SectionProjects from './components/SectionProjects';
 import SectionHero from './components/SectionHero';
+import SectionContacts from './components/SectionContacts';
 
 function App() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -46,17 +47,7 @@ function App() {
       <main>
         <SectionHero />
         <SectionProjects />
-        <section id="contacts" className="vh-100 d-flex align-items-center bg-grey">
-          <div className="container mt-5">
-            <h2 className="display-2">Contacts</h2>
-            <ul>
-              <li>Contact1</li>
-              <li>Contact2</li>
-              <li>Contact3</li>
-              <li>Contact4</li>
-            </ul>
-          </div>
-        </section>
+        <SectionContacts />
         <div className={`burger-menu z-2 ${menuIsOpen ? 'burger-menu_open' : ''}`}>
           <div className="container">
             <div onClick={closeMenu} className="burger-menu__close">
