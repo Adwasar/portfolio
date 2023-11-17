@@ -15,7 +15,7 @@ function SectionProjects() {
                   className={`project__img p-0 mt-4 mt-md-0 col-12 col-md-5 ${
                     i % 2 ? '' : 'order-md-0'
                   } order-1`}>
-                  <a href={project.demoUrl}>
+                  <a href={project.demoUrl} target="_blank">
                     <img src={project.imgSrc}></img>
                   </a>
                 </div>
@@ -35,14 +35,16 @@ function SectionProjects() {
                   </p>
                   <div className="d-flex gap-3">
                     <p>
-                      <a className="fw-semi" href={project.repoUrl}>
-                        GitHub
+                      <a className="fw-semi" href={project.demoUrl} target="_blank">
+                        Live Demo
                       </a>
                     </p>
                     <p>
-                      <a className="fw-semi" href={project.demoUrl}>
-                        Live Demo
-                      </a>
+                      {project.repoUrl ? (
+                        <a className="fw-semi" href={project.repoUrl} target="_blank">
+                          GitHub
+                        </a>
+                      ) : null}
                     </p>
                   </div>
                 </div>

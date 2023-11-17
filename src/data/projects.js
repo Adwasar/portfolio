@@ -38,7 +38,7 @@ const projects = [
   {
     imgSrc: RsHealthy,
     demoUrl: 'https://rs-clone-adwasar-pnmrvvtl-zhannach.netlify.app/',
-    repoUrl: 'https://rs-clone-adwasar-pnmrvvtl-zhannach.netlify.app/',
+    repoUrl: 'https://github.com/pnmrvvtl/rs-clone',
     title: 'Team project "RS-Healthy"',
     description: 'The application that helps with meal planning',
     functional:
