@@ -1,11 +1,22 @@
-import HayBossImg from '../assets/img/HeyBoss.png';
-import ReactPizza from '../assets/img/react-pizza.png';
-import SneakerStore from '../assets/img/sneakers-store.png';
-import RsHealthy from '../assets/img/rs-healthy.png';
+import JobSeeker from '../assets/img/JobSeeker.png'
+import HayBoss from '../assets/img/HeyBoss.png'
+import ReactPizza from '../assets/img/react-pizza.png'
+import SneakerStore from '../assets/img/sneakers-store.png'
+import RsHealthy from '../assets/img/rs-healthy.png'
 
 const projects = [
   {
-    imgSrc: HayBossImg,
+    imgSrc: JobSeeker,
+    demoUrl: 'https://adwasar-job-seeker.netlify.app/',
+    repoUrl: '',
+    title: 'Team project: "JobSeeker"',
+    description: 'Job search platform',
+    functional: 'Product description, Feedback form, Localization of 2 languages, authorization',
+    tools:
+      'React, JavaScript, Bootstrap, Redux Toolkit, React Router, React Spinners, react-i18nano, REST APIs, SCSS, Prettier',
+  },
+  {
+    imgSrc: HayBoss,
     demoUrl: 'https://marketplace-landing-29h.pages.dev/',
     repoUrl: '',
     title: 'Team project: "HeyBoss"',
@@ -45,6 +56,6 @@ const projects = [
       'after user input some values about himself our app can propose personal data for this user about health and propose meal plan for user.',
     tools: 'React, TypeScript, REST APIs, SCSS, Jest, ESlint, Prettier',
   },
-];
+]
 
-export default projects;
+export default projects
