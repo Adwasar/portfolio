@@ -1,3 +1,4 @@
+import PodologicalCenter from '../assets/img/podological-center.png'
 import JobSeeker from '../assets/img/JobSeeker.png'
 import HayBoss from '../assets/img/HeyBoss.png'
 import ReactPizza from '../assets/img/react-pizza.png'
@@ -5,6 +6,16 @@ import SneakerStore from '../assets/img/sneakers-store.png'
 import RsHealthy from '../assets/img/rs-healthy.png'
 
 const projects = [
+  {
+    imgSrc: PodologicalCenter,
+    demoUrl: 'https://podological-center.netlify.app/',
+    repoUrl: '',
+    title: 'Team project: "Podological center"',
+    description: 'Landing page for a clinic',
+    functional: 'Sliders, img comparison slider, map',
+    tools:
+      'JavaScript, Webpack, swiper, img-comparison-slider, SCSS, Prettier',
+  },
   {
     imgSrc: JobSeeker,
     demoUrl: 'https://adwasar-job-seeker.netlify.app/',
